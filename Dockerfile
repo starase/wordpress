@@ -35,6 +35,8 @@ VOLUME ["/app"]
 
  
 COPY start.sh /start.sh
+RUN chmod +x /stat.sh
+
 CMD ["./start.sh"]
  
 EXPOSE 80
